@@ -1,19 +1,135 @@
-PS C:\Users\kinga> node -v
->> npm -v
->> 
-node : The term 'node' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling 
-of the name, or if a path was included, verify that the path is correct and try again.
-At line:1 char:1
-+ node -v
-+ ~~~~
-    + CategoryInfo          : ObjectNotFound: (node:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
- 
-npm : The term 'npm' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of 
-the name, or if a path was included, verify that the path is correct and try again.
-At line:2 char:1
-+ npm -v
-+ ~~~
-    + CategoryInfo          : ObjectNotFound: (npm:String) [], CommandNotFoundException
-    + FullyQualifiedErrorId : CommandNotFoundException
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlumniHub</title>
+  <link rel="stylesheet" href="alumni.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">AlumniHub</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search alumni, events, or news...">
+      </div>
+      <div class="header-buttons">
+        <a href="#" class="sign-in">Sign In</a>
+        <a href="#" class="register">Register</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="main-content">
+      <button class="network-button">🎓 Join Our Alumni Network</button>
+      <h1>Welcome to <span>AlumniHub</span></h1>
+      <p>Connect with fellow alumni, stay updated with university news, and access exclusive networking opportunities. Join our growing community today!</p>
+    </div>
+
+    <section class="alumni-networks">
+      <h2>Top Alumni Networks</h2>
+      <div class="categories">
+        <a href="#">Engineering</a>
+        <a href="#">MBA</a>
+        <a href="#">Commerce</a>
+        <a href="#">Law</a>
+        <a href="#">Arts</a>
+        <a href="#">Schools</a>
+        <a href="#">Information Technology</a>
+        <a href="#">Management Consulting</a>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <img src="https://www.mbarendezvous.com/images/top-stories-img/bannerimage_1521784404.jpg" alt="IIM Ahmedabad">
+          <h3>IIM Ahmedabad</h3>
+          <p>44,917 Alumni</p>
+        </div>
+        <div class="card">
+          <img src="https://backend.insideiim.com/wp-content/uploads/2019/08/bannerimage_1545645788.jpg" alt="MICA">
+          <h3>MICA</h3>
+          <p>17,489 Alumni</p>
+        </div>
+        <div class="card">
+          <img src="https://lawprep.in/wp-content/uploads/2021/05/NALSAR.jpg" alt="NALSAR">
+          <h3>NALSAR</h3>
+          <p>1,614 Alumni</p>
+        </div>
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.iQD7p0MohWa81fUdA23WCwEsCF?rs=1&pid=ImgDetMain" alt="IIT Kharagpur">
+          <h3>IIT Kharagpur</h3>
+          <p>64,740 Alumni</p>
+        </div>
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.2_GTYfMHf8tCvCxW2hgdXQHaD4?rs=1&pid=ImgDetMain" alt="IIM Udaipur">
+          <h3>IIM Udaipur</h3>
+          <p>3,639 Alumni</p>
+      </div>
+      <div class="card">
+        <img src="https://th.bing.com/th/id/R.43bba3d3c2ee3649bd9d0534e8764f0e?rik=bjOwx0ClWH5L9Q&riu=http%3a%2f%2fphotos.wikimapia.org%2fp%2f00%2f02%2f51%2f35%2f71_full.jpg&ehk=EdjEoEWw0XgxYlMYCIAEnrvs%2beNuELnxVj2FRvIZb40%3d&risl=&pid=ImgRaw&r=0" alt="IIT Guwahati">
+        <h3>IIT Guwahati</h3>
+        <p>7,932 Alumni</p>
+      </div>
+      <div class="card">
+        <img src="https://images.shiksha.com/mediadata/images/1519204514phpvs8YLi.jpeg" alt="JGU">
+        <h3>JGU</h3>
+        <p>7,661 Alumni</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn.insideiim.com/wp-content/uploads/2020/10/05001756/photo.jpg" alt="MHRM IIT Kharagpur">
+        <h3>MHRM IIT Kharagpur</h3>
+        <p>175 Alumni</p>
+      </div>
+      <div class="card">
+        <img src="https://www.scconline.com/blog/wp-content/uploads/2017/04/RMLNLU-1.jpg" alt="RMLNLU">
+        <h3>RMLNLU</h3>
+        <p>1,434 Alumni</p>
+      </div>
+      <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.z0DAVpCrToCgat0mJpEBsgHaEK?rs=1&pid=ImgDetMain" alt="BITS Pilani">
+        <h3>BITS Pilani</h3>
+        <p>207,671 Alumni</p>
+      </div>
+    </section>
+    <section class="alumni-section">
+      <div class="left-content">
+          <h2>AlumniHub is an alumni networking platform powering over 5,000 alumni communities.</h2>
+          <p>It is helping alumni all over the world to connect with each other like never before.</p>
+          <div class="stats">
+              <h1>1,000,000+</h1>
+              <p>Alumni users and counting</p>
+          </div>
+      </div>
+      <div class="right-content">
+          <h3>Top Schools recommend AlumniHub</h3>
+          <div class="logos">
+              <!-- Add images here -->
+              <img src="https://th.bing.com/th/id/OIP.XI-B80Z9xcnD2JGc3sXFIQHaHc?rs=1&pid=ImgDetMain" alt="School 1">
+              <img src="https://iisc.ac.in/wp-content/uploads/2020/08/IISc_Master_Seal_Transparent.png" alt="School 2">
+              <img src="https://th.bing.com/th/id/OIP.OTQ-0jmLUCEWDCYRI7rG7QAAAA?rs=1&pid=ImgDetMain" alt="School 3">
+              <!-- Repeat as needed -->
+          </div>
+          <button class="cta-button">Join Your Alumni Network →</button>
+      </div>
+  </section>
+  <section class="features-section">
+    <div class="feature-item">
+        <img src="engaging-icon.png" alt="Engaging Icon">
+        <h3>Engaging</h3>
+        <p>The easiest way to keep up with everything in your network</p>
+    </div>
+    <div class="feature-item">
+        <img src="" alt="Private Icon">
+        <h3>Private</h3>
+        <p>A secure environment where all alumni are verified.</p>
+    </div>
+    <div class="feature-item">
+        <img src="trusted-icon.png" alt="Trusted Icon">
+        <h3>Trusted</h3>
+        <p>The community built by you and your neighbors.</p>
+    </div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
 
