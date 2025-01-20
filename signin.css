@@ -1,0 +1,146 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #f1f8e9, #dcedc8); /* Subtle light green gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation for the entire page */
+  }
+  
+  /* Sign-In Container */
+  .signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Sign-In Box */
+  .signin-box {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideIn 1.2s ease-in-out forwards; /* Slide-in animation */
+  }
+  
+  .signin-box h2 {
+    font-size: 26px;
+    color: #388e3c; /* Deep green title */
+    margin-bottom: 15px;
+    animation: popIn 1.2s ease-in-out; /* Pop-in animation for the heading */
+  }
+  
+  .signin-box .description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+    animation: fadeIn 1.8s ease-in-out; /* Fade-in for the description */
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border-color: #388e3c; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(56, 142, 60, 0.3);
+  }
+  
+  .input-group input:hover {
+    transform: scale(1.02); /* Subtle hover effect */
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #fff;
+    background: #388e3c; /* Green button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: bounceIn 1.5s ease-in-out;
+  }
+  
+  .btn:hover {
+    background: #81c784; /* Lighter green on hover */
+    transform: scale(1.05); /* Subtle zoom on hover */
+  }
+  
+  .extra-links {
+    margin-top: 15px;
+    font-size: 14px;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for extra links */
+  }
+  
+  .extra-links a {
+    color: #388e3c;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .extra-links a:hover {
+    color: #66bb6a; /* Lighter green on hover */
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes popIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+     
+  
