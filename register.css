@@ -1,0 +1,178 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #e0f7fa, #b2dfdb); /* Light teal gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  }
+  
+  /* Registration Container */
+  .registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Registration Box */
+  .registration-box {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideIn 1.2s ease-in-out forwards; /* Slide-in animation */
+  }
+  
+  .registration-box h2 {
+    font-size: 28px;
+    color: #00796b; /* Deep teal title */
+    margin-bottom: 15px;
+    animation: popIn 1.2s ease-in-out; /* Pop-in animation for the heading */
+  }
+  
+  .registration-box .description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+    animation: fadeIn 1.8s ease-in-out; /* Fade-in for the description */
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group input:focus,
+  .input-group select:focus {
+    border-color: #00796b; /* Teal border on focus */
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.3);
+  }
+  
+  .input-group input:hover,
+  .input-group select:hover {
+    transform: scale(1.02); /* Subtle hover effect */
+  }
+  
+  .checkbox-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .checkbox-group input {
+    margin-right: 8px;
+  }
+  
+  .checkbox-group a {
+    color: #00796b;
+    text-decoration: none;
+  }
+  
+  .checkbox-group a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button */
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #fff;
+    background: #00796b; /* Teal button */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: bounceIn 1.5s ease-in-out;
+  }
+  
+  .btn:hover {
+    background: #80cbc4; /* Lighter teal on hover */
+    transform: scale(1.05); /* Subtle zoom on hover */
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes popIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .registration-box {
+      padding: 20px;
+    }
+  
+    .registration-box h2 {
+      font-size: 24px;
+    }
+  }
+  
