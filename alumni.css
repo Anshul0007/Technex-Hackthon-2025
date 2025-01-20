@@ -11,6 +11,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 15px;
+  display: flex;
 }
 
 header {
@@ -29,10 +30,20 @@ header {
   padding: 8px 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  position: relative;
+  margin-left: 300px;
 }
 
+.header-buttons {
+  margin-left: 300px;
+  position: top-right;
+}
+.register{
+  margin-left: 5px;
+}
 .header-buttons a {
-  margin-left: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
   text-decoration: none;
   padding: 8px 12px;
   border-radius: 5px;
@@ -84,7 +95,7 @@ main h1 span {
 }
 
 .alumni-networks .grid {
-  display: grid;
+  display:grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
 }
@@ -112,4 +123,155 @@ main h1 span {
   font-size: 14px;
   color: #666;
 }
+.categories a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #0073e6;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.categories a.active {
+  background-color: #0073e6;
+  color: #fff;
+}
+
+.categories a:hover {
+  text-decoration: none;
+  background-color: #cce4f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.alumni-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #00c3a5, #008a8a);
+  color: white;
+}
+
+.left-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-content h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.left-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.stats h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.stats p {
+  font-size: 1em;
+}
+
+.right-content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.right-content h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.logos img {
+  width: 60px;
+  height: auto;
+  margin: 5px;
+}
+
+.cta-button {
+  background-color: white;
+  color: #00c3a5;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00a389;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafa;
+}
+
+.features-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f5f9fa;
+}
+
+.feature-item {
+  flex: 1;
+  max-width: 300px;
+  margin: 0 10px;
+  padding: 20px;
+}
+
+.feature-item img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-item p {
+  font-size: 1em;
+  color: #666;
+}
+
 
