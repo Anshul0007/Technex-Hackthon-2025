@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f8fdf4;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+/* Header Styles */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #354a32;
+}
+
+.search-bar input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 14px;
+}
+
+.header-buttons a {
+  margin-left: 15px;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.sign-in {
+  color: #354a32;
+  background-color: transparent;
+  border: 1px solid #354a32;
+}
+
+.register {
+  color: white;
+  background-color: #354a32;
+  border: 1px solid #354a32;
+}
+
+/* Main Section Styles */
+main {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.main-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.network-button {
+  background-color: #edf7ed;
+  color: #354a32;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.network-button:hover {
+  background-color: #d9f0d9;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #354a32;
+}
+
+h1 span {
+  color: #81a984;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 15px;
+  line-height: 1.6;
+}
